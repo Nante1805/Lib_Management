@@ -7,6 +7,6 @@ CREATE TABLE IF NOT EXISTS book(
      id_author VARCHAR(255) REFERENCES author(id)
 );
 
-INSERT INTO book VALUES ( 'ID001', 'bookName_1', 200, '2023-01-01', ARRAY['COMEDY'::"topic"], 'authorId_1' );
-INSERT INTO book VALUES ( 'bookId_2', 'bookName_2', 300, '2023-02-01', ARRAY['ROMANCE'::"topic", 'OTHER'::"topic"], 'authorId_2');
-INSERT INTO book VALUES ( 'bookId_3', 'bookName_3', 250, '2023-03-01', ARRAY['OTHER'::"topic"], 'authorId_3');
+INSERT INTO book VALUES ( 'ID001', 'COOL', 20, '2013-05-01', '{ROMANCE}', 'ID003' );
+INSERT INTO book VALUES ( 'ID002', 'NICE', 700, '2013-02-01', '{OTHER,COMEDY}', 'ID002');
+INSERT INTO book VALUES ( 'ID003', 'LOL', 2, '2003-03-01', '{COMEDY}', 'ID003');

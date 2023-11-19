@@ -4,6 +4,6 @@ CREATE TABLE IF NOT EXISTS author (
     sex CHAR(1) CHECK (sex IN ('M', 'F')) NOT NULL
 );
 
-INSERT INTO "author" values ('ID001', 'Mick', 'M');
-INSERT INTO "author" values ('ID002', 'Kail', 'F');
-INSERT INTO "author" values ('ID003', 'Michel', 'M');
+INSERT INTO author values ('ID001', 'Mick', 'M');
+INSERT INTO author values ('ID002', 'Kail', 'F');
+INSERT INTO author values ('ID003', 'Michel', 'M');
