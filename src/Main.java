@@ -15,7 +15,7 @@ public class Main {
         authorCrudOperations.save(authorTest);
         authorCrudOperations.findAll().forEach(System.out::println);
         authorCrudOperations.delete(authorTest);
-        authorCrudOperations.findAll().forEach(System.out::println);
+        authorCrudOperations.findAll();
 
         //subsriber test
         System.out.println("-".repeat(50));
