@@ -10,15 +10,16 @@ public class ConnectionToDatabase {
     private static final String USERNAME = System.getenv("POSTGRES_USERNAME");
 
     private static Connection connection = null;
-    private static Connection getConnection(){
+    public static Connection getConnection(){
         if(connection == null){
             try {
                 connection = DriverManager.getConnection(
                         URL,
-                        PASSWORD,
-                        USERNAME
+                        USERNAME,
+                        PASSWORD
                 );
             }catch (SQLException error){
+                System.out.println(error.getMessage());
                 throw new RuntimeException("Connection failed");
             }
         }
